@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script>
+      function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  if (name == "") {
+    alert("Please enter your name.");
+    return false;
+  }
+  
+  if (email == "") {
+    alert("Please enter your email address.");
+    return false;
+  }
+  
+  if (message == "") {
+    alert("Please enter your message.");
+    return false;
+  }
+  
+  return true;
+}
+
+    </script>
+  </head>
+
+  <body>
+    <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+      <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+      <div id="lead-content">
+        <h1>Nikhil Agarwal</h1>
+        <h2>Software Engineer</h2>
+        <a
+          href="./NikhilAgarwalResume.pdf"
+          download=""
+          class="btn-rounded-white"
+          >Download Resume</a
+        >
+      </div>
+      <!-- End #lead-content -->
+
+      <div id="lead-overlay"></div>
+
+      <div id="lead-down">
+        <span>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
+      </div>
+      <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">About Me</h2>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Hi, I'm Nikhil Agarwal, a software developer with a passion for
+              building great software. I love working with cutting-edge
+              technologies and exploring new ways to solve complex problems. In
+              my free time, I enjoy listening music, playing games.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+      <h2 class="heading">Experience</h2>
+      <div id="experience-timeline">
+        <div data-date="Oct 2022 – Jan 2023">
+          <h3>GLA UNIVERSITY</h3>
+          <h4>Technical Trainee Intern</h4>
+          <p>
+            • Gained experience as Technical Trainee Intern.<br />
+            • Taught students Java, SQL, and prepare them for their placements.
+          </p>
+        </div>
+
+        <div data-date=", July 2021 – Aug 2021">
+          <h3>EDUCATION4OL</h3>
+          <h4>Web Developer</h4>
+          <p>
+            •Gained practical knowledge of Web Development concepts and
+            technologies. <br />
+            • Built a website related to courses
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+      <h2 class="heading">Education</h2>
+      <div class="education-block">
+        <h3>GLA University</h3>
+        <span class="education-date">2019-Present </span>
+        <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+        <ul>
+          <li>7th Sem, Computer Science and Engineering.</li>
+          <li>CGPA: 8.17</li>
+          <li>Situated In: Mathura, UttarPradesh, India.</li>
+        </ul>
+      </div>
+      <!-- End .education-block -->
+
+      <div class="education-block">
+        <h3>Kids Corner Happy Sr. Sec. School</h3>
+        <span class="education-date">2018-2019 </span>
+        <h4>Board (CBSE)</h4>
+        <ul>
+          <li>Class XII</li>
+          <li>CGPA: 81.0</li>
+          <li>Situated In: Firozabad, UttarPradesh, India.</li>
+        </ul>
+      </div>
+      <!-- End .education-block -->
+
+      <div class="education-block">
+        <h3>Kids Corner Happy Sr. Sec. School</h3>
+        <span class="education-date">2016-2017 </span>
+        <h4>Board (CBSE)</h4>
+        <ul>
+          <li>Class X</li>
+          <li>CGPA: 81.6</li>
+          <li>Situated In: Firozabad, UttarPradesh, India.</li>
+        </ul>
+      </div>
+      <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+      <h2 class="heading">Projects</h2>
+      <div class="container">
+        <div class="row">
+          <div class="project">
+            <div class="project-image">
+              <img src="images/homesickCody.png" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Homesick Cody</h3>
+              <p>
+                Developed a game using Scratch Programming where user help Cody
+                to go back to his planet.
+              </p>
+              <a href="https://scratch.mit.edu/projects/416577523"
+                >View Project</a
+              >
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+
+          <div class="project">
+            <div class="project-image">
+              <img src="images/DailyChaska.png" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Daily Chaska</h3>
+              <p>
+                Designed a website using HTML, CSS, and Bootstrap to deliver
+                news in a different format than television.
+              </p>
+              <a href="https://nikhilagrawal-07.github.io/Daily-Chaska/"
+                >View Project</a
+              >
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+          <div class="project">
+            <div class="project-image">
+              <img src="images/Bidhit.png" style="width: 70%; height: 18.8vi" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Bid-Hit</h3>
+              <p>
+                Created a website using HTML, CSS, Bootstrap, and JavaScript to
+                store bidder details in Google Firebase.
+              </p>
+              <a href="https://abhayxkumar.github.io/bid-hit/">View Project</a>
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+          <div class="project">
+            <div class="project-image">
+              <img src="images/Kickin.jpg" style="width: 140%" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>KICKIN</h3>
+              <p>
+                Designed and developed a website using HTML, CSS, Bootstrap,
+                JavaScript, and Firebase to improve health, build muscles and
+                endurance of users
+              </p>
+              <a href="https://nikhilagrawal-07.github.io/KICKIN/"
+                >View Project</a
+              >
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+          <div class="project">
+            <div class="project-image">
+              <img src="images/bank.jpeg" style="width: 90%" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Banking Application</h3>
+              <p>
+                Developed a banking system program using Java that allows users
+                to see their account details and perform certain actions
+              </p>
+              <a href="https://github.com/NikhilAgrawal-07/BankingApplication"
+                >View Project</a
+              >
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+          <div class="project">
+            <div class="project-image">
+              <img src="images/dungeon.jpeg" style="width: 70%" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Dungeon Game</h3>
+              <p>
+                This is a Text Game named DungeonGame which is completely based
+                on Java. In this game, user have to perfom some actions, to
+                defeat enemies, have health potions, and many more. Give this
+                game a Try!!
+              </p>
+              <a href="https://github.com/NikhilAgrawal-07/DungeonGame"
+                >View Project</a
+              >
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+        </div>
+      </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+      <h2 class="heading">Skills</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>React</li>
+        <li>Java</li>
+        <li>C</li>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>Git</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+      <h2>Get in Touch</h2>
+      <div id="contact-form">
+        <form onsubmit="return validateForm()">
+          <label for="name"></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <label for="message"></label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>
+              Copyright &copy; <span id="current-year">2023</span> Nikhil
+              Agarwal
+            </p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/NikhilAgrawal-07" target="_blank"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/nikhil-agarwal-4a18251ab/"
+                  target="_blank"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.hackerrank.com/_191500494" target="_blank"
+                  ><i class="fa fa-500px" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
