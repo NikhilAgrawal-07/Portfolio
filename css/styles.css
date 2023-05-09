@@ -280,6 +280,11 @@ footer {
   animation-iteration-count: infinite;
   padding-top: 5px;
 }
+/* #lead-down i {
+  animation: pulsate 1.5s ease;
+  animation-iteration-count: infinite;
+  padding-top: 5px;
+} */
 @keyframes pulsate {
   0% {
     transform: scale(1, 1);
